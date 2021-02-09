@@ -20,11 +20,14 @@
                     </div>
                     <div class="col-md-3 text-secondary xs-margin-10px-bottom">
                         <span class="ti-location-pin margin-10px-right"></span>{{ job_item.location }}
-                        <br> {{ job_item.type }}
+                        <br> {{ job_item.get_type_display }}
                     </div>
                     <div class="col-md-3 text-secondary xs-margin-10px-bottom">
                         <span class="fas fa-briefcase margin-10px-right"></span>{{ job_item.exp }}
-                    </div> <br>
+                    </div><br> {{job_item.created_at}}
+                    <div class="col-md-3 text-secondary xs-margin-10px-bottom">
+                        <span class="fas fa-rupee-sign margin-10px-right"></span>{{ job_item.salary }}
+                    </div>
                     <div class="col-md-3 col-xl-2 text-primary text-left text-md-right">
                         Apply now →
                     </div>
